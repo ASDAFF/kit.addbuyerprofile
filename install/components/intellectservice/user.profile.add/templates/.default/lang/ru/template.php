@@ -1,4 +1,8 @@
 <?
+/**
+ * Copyright (c) 19/12/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 $MESS["SPPD_RECORDS_LIST"] = "В список профилей";
 $MESS["SALE_SAVE"] = "Сохранить";
 $MESS["SALE_APPLY"] = "Применить";
@@ -15,6 +19,6 @@ $MESS["CP_CREATE_PROFILE"] = "Название для нового профил�
 $MESS["CP_NAME_PROFILE"] = "Название профиля";
 $MESS["CP_ADD_PROFILE"] = "Добавить";
 $MESS["CP_DATA_PROFILE"] = "Данные профиля";
-$MESS["INTELLECTSERVICE_ADDBUYERPROFILE_TIP_PROFILA"] = "Тип профиля:
+$MESS["COLLECTED_ADDBUYERPROFILE_TIP_PROFILA"] = "Тип профиля:
         ";
 ?>

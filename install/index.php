@@ -1,9 +1,13 @@
 <?
+/**
+ * Copyright (c) 19/12/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
 IncludeModuleLangFile(__FILE__);
-Class intellectservice_addbuyerprofile extends CModule
+Class collected_addbuyerprofile extends CModule
 {
-	const MODULE_ID = 'intellectservice.addbuyerprofile';
-	var $MODULE_ID = 'intellectservice.addbuyerprofile'; 
+	const MODULE_ID = 'collected.addbuyerprofile';
+	var $MODULE_ID = 'collected.addbuyerprofile';
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -17,22 +21,22 @@ Class intellectservice_addbuyerprofile extends CModule
 		include(dirname(__FILE__)."/version.php");
 		$this->MODULE_VERSION = $arModuleVersion["VERSION"];
 		$this->MODULE_VERSION_DATE = $arModuleVersion["VERSION_DATE"];
-		$this->MODULE_NAME = GetMessage("intellectservice.addbuyerprofile_MODULE_NAME");
-		$this->MODULE_DESCRIPTION = GetMessage("intellectservice.addbuyerprofile_MODULE_DESC");
+		$this->MODULE_NAME = GetMessage("collected.addbuyerprofile_MODULE_NAME");
+		$this->MODULE_DESCRIPTION = GetMessage("collected.addbuyerprofile_MODULE_DESC");
 
-		$this->PARTNER_NAME = GetMessage("intellectservice.addbuyerprofile_PARTNER_NAME");
-		$this->PARTNER_URI = GetMessage("intellectservice.addbuyerprofile_PARTNER_URI");
+		$this->PARTNER_NAME = GetMessage("collected.addbuyerprofile_PARTNER_NAME");
+		$this->PARTNER_URI = GetMessage("collected.addbuyerprofile_PARTNER_URI");
 	}
 
 	function InstallDB($arParams = array())
 	{
-		RegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CIntellectserviceAddbuyerprofile', 'OnBuildGlobalMenu');
+		RegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CCollectedAddbuyerprofile', 'OnBuildGlobalMenu');
 		return true;
 	}
 
 	function UnInstallDB($arParams = array())
 	{
-		UnRegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CIntellectserviceAddbuyerprofile', 'OnBuildGlobalMenu');
+		UnRegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CCollectedAddbuyerprofile', 'OnBuildGlobalMenu');
 		return true;
 	}
 

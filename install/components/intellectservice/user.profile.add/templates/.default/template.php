@@ -1,6 +1,10 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <?
-    use Bitrix\Main\Localization\Loc;
+/**
+ * Copyright (c) 19/12/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+use Bitrix\Main\Localization\Loc;
     CJSCore::Init(array("jquery"));
     $templateFolder = $this->GetFolder();
     Bitrix\Main\Page\Asset::getInstance()->addJs($templateFolder."/vendor.js");
@@ -18,7 +22,7 @@
     <div class="table">
       <div class="table-row">
         <div class="table-cell">
-          <?=GetMessage("INTELLECTSERVICE_ADDBUYERPROFILE_TIP_PROFILA")?></div>
+          <?=GetMessage("COLLECTED_ADDBUYERPROFILE_TIP_PROFILA")?></div>
         <?foreach($arResult["PERSON_TYPE"] as $key=>$ptype):?>
         <div class="table-cell">
           <div class="table-cell label-cell">

@@ -1,5 +1,9 @@
 <?
-Class CIntellectserviceAddbuyerprofile 
+/**
+ * Copyright (c) 19/12/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
+ */
+
+Class CCollectedAddbuyerprofile
 {
 	function OnBuildGlobalMenu(&$aGlobalMenu, &$aModuleMenu)
 	{
