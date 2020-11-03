@@ -22,7 +22,7 @@ use Bitrix\Main\Localization\Loc;
     <div class="table">
       <div class="table-row">
         <div class="table-cell">
-          <?=GetMessage("COLLECTED_ADDBUYERPROFILE_TIP_PROFILA")?></div>
+          <?=GetMessage("KIT_ADDBUYERPROFILE_TIP_PROFILA")?></div>
         <?foreach($arResult["PERSON_TYPE"] as $key=>$ptype):?>
         <div class="table-cell">
           <div class="table-cell label-cell">

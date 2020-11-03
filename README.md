@@ -1,4 +1,4 @@
-# collected.addbuyerprofile
+# kit.addbuyerprofile
 
 **Описание**
 

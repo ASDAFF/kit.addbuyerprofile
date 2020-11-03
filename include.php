@@ -3,7 +3,7 @@
  * Copyright (c) 19/12/2019 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
  */
 
-Class CCollectedAddbuyerprofile
+Class CKitAddbuyerprofile
 {
 	function OnBuildGlobalMenu(&$aGlobalMenu, &$aModuleMenu)
 	{

@@ -4,10 +4,10 @@
  */
 
 IncludeModuleLangFile(__FILE__);
-Class collected_addbuyerprofile extends CModule
+Class kit_addbuyerprofile extends CModule
 {
-	const MODULE_ID = 'collected.addbuyerprofile';
-	var $MODULE_ID = 'collected.addbuyerprofile';
+	const MODULE_ID = 'kit.addbuyerprofile';
+	var $MODULE_ID = 'kit.addbuyerprofile';
 	var $MODULE_VERSION;
 	var $MODULE_VERSION_DATE;
 	var $MODULE_NAME;
@@ -21,22 +21,22 @@ Class collected_addbuyerprofile extends CModule
 		include(dirname(__FILE__)."/version.php");
 		$this->MODULE_VERSION = $arModuleVersion["VERSION"];
 		$this->MODULE_VERSION_DATE = $arModuleVersion["VERSION_DATE"];
-		$this->MODULE_NAME = GetMessage("collected.addbuyerprofile_MODULE_NAME");
-		$this->MODULE_DESCRIPTION = GetMessage("collected.addbuyerprofile_MODULE_DESC");
+		$this->MODULE_NAME = GetMessage("kit.addbuyerprofile_MODULE_NAME");
+		$this->MODULE_DESCRIPTION = GetMessage("kit.addbuyerprofile_MODULE_DESC");
 
-		$this->PARTNER_NAME = GetMessage("collected.addbuyerprofile_PARTNER_NAME");
-		$this->PARTNER_URI = GetMessage("collected.addbuyerprofile_PARTNER_URI");
+		$this->PARTNER_NAME = GetMessage("kit.addbuyerprofile_PARTNER_NAME");
+		$this->PARTNER_URI = GetMessage("kit.addbuyerprofile_PARTNER_URI");
 	}
 
 	function InstallDB($arParams = array())
 	{
-		RegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CCollectedAddbuyerprofile', 'OnBuildGlobalMenu');
+		RegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CKitAddbuyerprofile', 'OnBuildGlobalMenu');
 		return true;
 	}
 
 	function UnInstallDB($arParams = array())
 	{
-		UnRegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CCollectedAddbuyerprofile', 'OnBuildGlobalMenu');
+		UnRegisterModuleDependences('main', 'OnBuildGlobalMenu', self::MODULE_ID, 'CKitAddbuyerprofile', 'OnBuildGlobalMenu');
 		return true;
 	}
 
